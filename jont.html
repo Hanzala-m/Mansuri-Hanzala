@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Form</title>
+  <link rel="stylesheet" href="jont.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Join Our Fitness Plan</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="plan">Choose Plan</label>
+      <select id="plan" name="plan" required>
+        <option value="">-- Select Plan --</option>
+        <option value="basic">Basic - ₹499</option>
+        <option value="standard">Standard - ₹999</option>
+        <option value="premium">Premium - ₹1499</option>
+      </select>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+   
+</body>
+</html>
