@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Section */
+.contact-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+  animation: fadeIn 1s ease;
+  text-align: center;
+}
+
+/* Heading */
+.contact-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff6a88;
+  text-shadow: 0 0 12px rgba(255,106,136,0.7);
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Form Group */
+.form-group {
+  text-align: left;
+}
+
+/* Labels */
+label {
+  font-size: 0.95rem;
+  color: #ddd;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Inputs + Textarea */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+  resize: none;
+}
+
+/* Glow on focus */
+input:focus, textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px #ff6a88, 0 0 20px #ff6a88;
+  border: 1px solid #ff6a88;
+}
+
+/* Button */
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6a88, #ff4b5c);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(255,75,92,0.5);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255,75,92,0.8);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
