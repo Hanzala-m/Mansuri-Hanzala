@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+/* Section Title */
+.nutrition {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.nutrition h1 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #ff6a88;
+  text-shadow: 0px 4px 12px rgba(255, 106, 136, 0.4);
+}
+
+/* Grid Layout */
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Style */
+.nutrition-card {
+  background: #161b22;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nutrition-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0px 20px 40px rgba(255, 75, 92, 0.4);
+}
+
+/* Image Style */
+.nutrition-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ff6a88;
+}
+
+/* Content */
+.nutrition-card h3 {
+  font-size: 1.5rem;
+  margin: 20px 15px 10px;
+  color: #ff6a88;
+}
+
+.nutrition-card p {
+  font-size: 1rem;
+  margin: 0 15px 20px;
+  color: #9ba4b5;
+  line-height: 1.5;
+}
+
+/* Glow Effect */
+.nutrition-card:hover h3 {
+  text-shadow: 0 0 10px #ff6a88, 0 0 20px #ff6a88;
+}
