@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: #0a0f14;
+  color: #e6edf3;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ff4b5c;
+  text-shadow: 0 0 10px rgba(255, 75, 92, 0.8);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #c9d1d9;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6a88;
+  text-shadow: 0 0 8px rgba(255, 106, 136, 0.6);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  font-size: 2.8rem;
+  cursor: pointer;
+  color: #ff6a88;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(10, 15, 20, 0.8), rgba(10, 15, 20, 0.9)),
+              url("gym\ img.jpg") center/cover no-repeat;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ff6a88;
+  text-shadow: 0 0 15px rgba(255, 106, 136, 0.8);
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #c9d1d9;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff4b5c, #ff6a88);
+  color: white;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 106, 136, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo-img {
+    width: 70px;  /* size adjust kari shako */
+    height: 50px;
+    margin-right: 0px;
+}
+
